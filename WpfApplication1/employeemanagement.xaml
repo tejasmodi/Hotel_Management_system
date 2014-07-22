@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApplication1.employeemanagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="employeemanagement" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Background="CornflowerBlue">
+        <Button Name="empadd" Visibility="Visible" FontSize="20" Content="ADD" HorizontalAlignment="Left" Background="Green" Height="58" Margin="77,175,0,0" VerticalAlignment="Top" Width="116" Click="empadd_Click"/>
+        <Button Visibility="Visible" Name="empdelete" FontSize="20" Content="DELETE" Background="Green" HorizontalAlignment="Left" Height="58" Margin="77,266,0,0" VerticalAlignment="Top" Width="116" Click="empdelete_Click"/>
+        <Button Visibility="Visible" Name="maincancel" FontSize="20" Content="CANCEL" Background="Green" HorizontalAlignment="Left" Height="58" Margin="77,346,0,0" VerticalAlignment="Top" Width="116" Click="maincancel_Click"/>
+        <Grid Name="addemployee" Visibility="Collapsed" HorizontalAlignment="Left" Height="435" Margin="144,49,0,0" VerticalAlignment="Top" Width="593">
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,13,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,56,0,0" TextWrapping="Wrap" Text="Manager ID" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="47" Margin="54,99,0,0" TextWrapping="Wrap" Text="DOB[DD-MMM-YYYY]" VerticalAlignment="Top" Width="198"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,142,0,0" TextWrapping="Wrap" Text="Designation" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,185,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,228,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="144"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="54,271,0,0" TextWrapping="Wrap" Text="Mail_ID" VerticalAlignment="Top" Width="144"/>
+            <TextBox Name="nm" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="mid" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="dob" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="desig" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="addr" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="phone" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="mail" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="277,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <Button Name="add" Content="Add Employee" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="112,353,0,0" VerticalAlignment="Top" Width="140" Click="add_Click"/>
+            <Button Name="cancel" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="309,353,0,0" VerticalAlignment="Top" Width="140" Click="cancel_Click"/>
+        </Grid>
+        
+        <Grid Name="deletegrid" Visibility="Collapsed" HorizontalAlignment="Left" Height="314" Margin="193,114,0,0" VerticalAlignment="Top" Width="476">
+            <TextBlock Name="delempno" TextAlignment="Right"  HorizontalAlignment="Left" Height="32" Margin="60,100,0,0" TextWrapping="Wrap" Text="Emp No." VerticalAlignment="Top" FontSize="20"   Width="100"/>
+            <TextBox Name="delemployeenumber" HorizontalAlignment="Left" Height="47" Margin="196,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="20" Foreground="Green" Width="247"/>
+            <Button Name="deletesearch" Content="Delete" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="102,200,0,0" VerticalAlignment="Top" Width="136" Click="deletesearch_Click"/>
+            <Button Name="delcancel" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="266,200,0,0" VerticalAlignment="Top" Width="140" Click="cancel_Click"/>
+        </Grid>
+    </Grid>
+</Window>

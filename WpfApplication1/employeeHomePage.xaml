@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.employeeHomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="employeeHomePage" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid  Background="CornflowerBlue">
+        <TextBlock Name="hometext" TextAlignment="Center" FontSize="30" Foreground="Red" HorizontalAlignment="Left" Height="248" Margin="130,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="632"/>
+        <Grid Name="sidepanel" HorizontalAlignment="Left" Height="59" Margin="27,42,0,0" VerticalAlignment="Top" Width="832">
+            <Button Background="Green" FontSize="10" Click="buttonEmployeeHomePage" Content="Home" HorizontalAlignment="Left" Height="25" Margin="239,10,0,0" VerticalAlignment="Top" Width="118" />
+            <Button Background="Green" Content="Logout" Click="buttonLogout" HorizontalAlignment="Left" Height="25" Margin="503,10,0,0" VerticalAlignment="Top" Width="118" />
+            <Button Background="Green" FontSize="10" Click="buttonEditProfile" Content="Edit Profile" HorizontalAlignment="Left" Height="25" Margin="371,10,0,0" VerticalAlignment="Top" Width="118" />
+        </Grid>
+    </Grid>
+</Window>

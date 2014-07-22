@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication1.profilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Profile" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Background="CornflowerBlue">
+        <Grid Name="addemployee" Visibility="Visible" HorizontalAlignment="Left" Height="470" Margin="73,0,0,0" VerticalAlignment="Top" Width="787">
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,97,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,140,0,0" TextWrapping="Wrap" Text="Manager ID" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,183,0,0" TextWrapping="Wrap" Text="DOB [DD-MMM-YYYY]" VerticalAlignment="Top" Width="233"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,226,0,0" TextWrapping="Wrap" Text="Designation" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,269,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,312,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="144"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,355,0,0" TextWrapping="Wrap" Text="Mail_ID" VerticalAlignment="Top" Width="144"/>
+            <TextBox Name="nm" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="mid" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="dob" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="desig" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,226,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="addr" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="phone" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="mail" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="317,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <Button Name="add" Content="ADD" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="36" Margin="339,411,0,0" VerticalAlignment="Top" Width="89" Click="add_Click"/>
+            <Button Name="passwordChange" Content="Change Password" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="36" Margin="541,222,0,0" VerticalAlignment="Top" Width="181" Click="passwordChange_Click" />
+            <Button Background="Green" FontSize="20" Click="buttonCancel" Content="Cancel" HorizontalAlignment="Left" Height="36" Margin="541,293,0,0" VerticalAlignment="Top" Width="181"/>
+        </Grid>
+    </Grid>
+</Window>

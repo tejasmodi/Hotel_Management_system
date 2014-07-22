@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApplication1.roommanagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="roommanagement" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Background="CornflowerBlue">
+
+        <Button Name="addroom" Content="ADD" HorizontalAlignment="Left" Click="addroom_Click"  Background="Green" FontSize="20" Height="54" Margin="88,120,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button Name="editroom" Content="EDIT" HorizontalAlignment="Left" Click="roomedit_Click" Height="54" FontSize="20" Background="Green" Margin="88,179,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button Name="empdelete" Content="DELETE" Background="Green" HorizontalAlignment="Left" Height="58" FontSize="20" Margin="88,238,0,0" VerticalAlignment="Top" Width="112" Click="empdelete_Click"/>
+        <Button Visibility="Visible" Name="maincancel" Content="CANCEL" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="58" Margin="88,301,0,0" VerticalAlignment="Top" Width="112" Click="maincancel_Click"/>
+
+        <Grid Name="add" Visibility="Collapsed" HorizontalAlignment="Left" Height="343" Margin="200,80,0,0" VerticalAlignment="Top" Width="534">
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,54,0,0" TextWrapping="Wrap" Text="Room ID" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,97,0,0" TextWrapping="Wrap" Text="Room Type" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,135,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="116"/>
+            <TextBox Name="rmid" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="236,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="rmtype" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="236,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="pr" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="236,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <Button Name="addr" Content="ADD" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="132,234,0,0" VerticalAlignment="Top" Width="140" Click="add_Click"/>
+            <Button Name="cancel" Click="cancel_Click" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="298,234,0,0" VerticalAlignment="Top" Width="140" />
+
+        </Grid>
+        <Grid Visibility="Collapsed" Name="edit" HorizontalAlignment="Left" Height="343" Margin="164,80,0,0" VerticalAlignment="Top" Width="550">
+            <TextBlock Name="roomid" TextAlignment="Right"  HorizontalAlignment="Left" Height="32" Margin="131,130,0,0" TextWrapping="Wrap" Text="Room ID" VerticalAlignment="Top" FontSize="20"   Width="100"/>
+            <TextBox Name="rid" HorizontalAlignment="Left" Height="47" Margin="272,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="20" Foreground="Green" Width="146"/>
+            
+            <TextBlock Visibility="Collapsed" Name="edittype" HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,97,0,0" TextWrapping="Wrap" Text="Type" VerticalAlignment="Top" Width="116"/>
+            <TextBlock Visibility="Collapsed" Name="editprice" HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,140,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="116"/>
+            
+            <TextBox Visibility="Collapsed" Name="type" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="236,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Visibility="Collapsed" Name="price" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="236,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <Button Visibility="Collapsed" Name="editr" Content="EDIT" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="176,264,0,0" VerticalAlignment="Top" Width="140" Click="edit_Click"/>
+            <Button Name="innercancel" Visibility="Collapsed" Click="cancel_Click" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="340,264,0,0" VerticalAlignment="Top" Width="140" />
+            <Button Name="search" Content="Search" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="131,238,0,0" VerticalAlignment="Top" Width="136" Click="search_Click"/>
+            <Button Name="searchcancel" Click="cancel_Click" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="316,238,0,0" VerticalAlignment="Top" Width="140" />
+        </Grid>
+        <Grid Name="deletegrid" Visibility="Collapsed" HorizontalAlignment="Left" Height="314" Margin="212,129,0,0" VerticalAlignment="Top" Width="476">
+            <TextBlock Name="delroom" TextAlignment="Right"  HorizontalAlignment="Left" Height="32" Margin="150,100,0,0" TextWrapping="Wrap" Text="Room No." VerticalAlignment="Top" FontSize="20"   Width="100"/>
+            <TextBox Name="delroomnumber" HorizontalAlignment="Left" Height="47" Margin="271,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="20" Foreground="Green" Width="172"/>
+            <Button Name="deletesearch" Content="Delete" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="175,191,0,0" VerticalAlignment="Top" Width="136" Click="deletesearch_Click"/>
+            <Button Name="delcancel" Click="cancel_Click" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="326,191,0,0" VerticalAlignment="Top" Width="140" />
+        </Grid>
+    </Grid>
+</Window>

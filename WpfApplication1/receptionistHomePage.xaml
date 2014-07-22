@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1.Home" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid  Background="CornflowerBlue">
+        <TextBlock Name="hometext" TextAlignment="Center" FontSize="30" Foreground="Red" HorizontalAlignment="Left" Height="248" Margin="130,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="632"/>
+        <Grid Name="sidePanel" HorizontalAlignment="Left" Height="59" Margin="50,42,0,0" VerticalAlignment="Top" Width="832">
+            <Button Background="Green" FontSize="10" Content="Home" HorizontalAlignment="Left" Height="25" Margin="104,10,0,0" VerticalAlignment="Top" Width="118" Click="buttonReceptionistHomePage"/>
+            <Button Background="Green" Content="Reservations" HorizontalAlignment="Left" Height="25" Margin="350,10,0,0" VerticalAlignment="Top" Width="118" Click="buttonReservation"/>
+            <Button Background="Green" Content="Checkout" HorizontalAlignment="Left" Height="25" Margin="473,10,0,0" VerticalAlignment="Top" Width="118" Click="buttonCheckout"/>
+            <Button Background="Green" Content="Logout" HorizontalAlignment="Left" Height="25" Margin="596,10,0,0" VerticalAlignment="Top" Width="118" Click="buttonLogout"/>
+            <Button Background="Green" Content="Edit Profile" HorizontalAlignment="Left" Height="25" Click="buttonEditProfile" Margin="227,10,0,0" VerticalAlignment="Top" Width="118" />
+        </Grid>
+    </Grid>
+</Window>

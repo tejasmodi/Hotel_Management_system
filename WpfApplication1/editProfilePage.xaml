@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.editProfilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Profile" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid  Background="CornflowerBlue">
+        <TextBlock  TextAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="347,158,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="68"/>
+        <TextBlock  TextAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="347,187,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="68"/>
+        <TextBox Name="username" HorizontalAlignment="Left" Height="24" Margin="445,158,0,0" TextWrapping="Wrap" Foreground="Green" Text="" VerticalAlignment="Top" Width="97"/>
+        <PasswordBox Name="pass" HorizontalAlignment="Left" Height="24" Margin="445,187,0,0" VerticalAlignment="Top" Width="97"  Foreground="Green"/>
+        <Button Background="Green" FontSize="10" Click="buttonCheckProfile" Content="Edit" HorizontalAlignment="Left" Height="25" Margin="320,244,0,0" VerticalAlignment="Top" Width="118" />
+        <Button Background="Green" FontSize="10" Click="buttonCancel" Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="454,244,0,0" VerticalAlignment="Top" Width="118"/>
+    </Grid>
+</Window>

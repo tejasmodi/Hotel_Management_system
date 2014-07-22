@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApplication1.manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Background="CornflowerBlue">
+        <TextBlock Name="hometext" TextAlignment="Center" FontSize="30" Foreground="Red" HorizontalAlignment="Left" Height="248" Margin="130,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="632"/>
+        <Grid Name="sidePanel" HorizontalAlignment="Left" Height="59" Margin="50,42,0,0" VerticalAlignment="Top" Width="832">
+            <Button Name="home" Background="Green" FontSize="10" Content="Home" HorizontalAlignment="Left" Height="25" Margin="70,10,0,0" Click="home_Click" VerticalAlignment="Top" Width="118"/>
+            <Button Name="empmanage" Background="Green" Content="Employee Management" HorizontalAlignment="Left" Height="25" Margin="206,10,0,0" Click="empmanage_Click" VerticalAlignment="Top" Width="135"/>
+            <Button Name="roommanage" Background="Green" Content="Room Management" HorizontalAlignment="Left" Height="25" Margin="355,10,0,0" Click="roommanage_Click"  VerticalAlignment="Top" Width="118"/>
+            <Button Name="logout" Background="Green" Content="Logout" HorizontalAlignment="Left" Height="25" Margin="490,10,0,0" Click="logout_Click" VerticalAlignment="Top" Width="118" />
+        </Grid>
+    </Grid>
+</Window>

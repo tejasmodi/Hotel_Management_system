@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApplication1.reservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="reservation" Height="525" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid Background="CornflowerBlue">
+
+        <Grid Name="addcustomer" Visibility="Visible" HorizontalAlignment="Left" Height="454" Margin="45,30,0,0" VerticalAlignment="Top" Width="837" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,10,0,0" TextWrapping="Wrap" Text="Customer ID" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,54,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,97,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,140,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,183,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,251,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="144"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,294,0,0" TextWrapping="Wrap" Text="Mail_ID" VerticalAlignment="Top" Width="144"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="20" Height="38" Margin="40,337,0,0" TextWrapping="Wrap" Text="Cell No." VerticalAlignment="Top" Width="116"/>
+            <TextBlock HorizontalAlignment="Left" Height="70" FontSize="20" Margin="471,50,0,0" TextWrapping="Wrap" Text="Check-In          [DD-MMM-YYYY]" VerticalAlignment="Top" Width="172"/>
+            <TextBlock HorizontalAlignment="Left" Height="70" FontSize="20" Margin="471,125,0,0" TextWrapping="Wrap" Text="Check-Out          [DD-MMM-YYYY]" VerticalAlignment="Top" Width="172"/>
+            <TextBlock HorizontalAlignment="Left" Height="38" FontSize="20" Margin="471,200,0,0" TextWrapping="Wrap" Text="Room ID" VerticalAlignment="Top" Width="106"/>
+            <TextBox Name="cid" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="fname" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="lname" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <RadioButton Name="gen_male" FontSize="20" Content="Male" HorizontalAlignment="Left" Margin="182,152,0,0" VerticalAlignment="Top" Width="74"/>
+            <RadioButton Name="gen_female" FontSize="20" Content="Female" HorizontalAlignment="Left" Margin="287,152,0,0" VerticalAlignment="Top" Width="97"/>
+            <TextBox Name="address" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="55" Margin="182,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="pno" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="mail" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="cell" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="182,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202"/>
+            <TextBox Name="start" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="632,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+            <TextBox Name="end" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="632,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+            <TextBox Name="rid" HorizontalAlignment="Left" FontSize="20" Foreground="Green" Height="38" Margin="632,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+            <Button Name="confirm" Content="Confirm" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="503,343,0,0" VerticalAlignment="Top" Width="140" Click="confirm_Click"/>
+            <Button Name="cancel" Content="Cancel" Background="Green" FontSize="20" HorizontalAlignment="Left" Height="52" Margin="668,343,0,0" VerticalAlignment="Top" Width="140" Click="cancel_Click"/>
+            
+        </Grid>
+    </Grid>
+</Window>
